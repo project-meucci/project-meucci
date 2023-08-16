@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 </head>
 <body>
-<script src="https://cdn.jsdelivr.net/npm/@tripetto/runner"></script>
-<script src="https://cdn.jsdelivr.net/npm/@tripetto/runner-autoscroll"></script>
-<script src="https://cdn.jsdelivr.net/npm/@tripetto/studio"></script>
-<script>
-TripettoStudio.form({
-    runner: TripettoAutoscroll,
-    token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiQjNXMG9sYStITkRiZXd5blNrc3NoOVRYK24zTDRSeUFYcmRUVE81MFNHOD0iLCJkZWZpbml0aW9uIjoiQW16amMwK2c0UVJFR2xNejF6amE2bWtSZFR4bStOc3grRnNPZllEK2grYz0iLCJ0eXBlIjoiY29sbGVjdCJ9.RnwkGbhM4zAOMxOiHbfgCMyajmfv6W5r7xLKKPJDyOQ"
-});
-</script>
+    <form action="https://api.staticforms.xyz/submit" method="post">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="text" name="email" placeholder="Your Email" />
+        <textarea name="message"></textarea>
+        <input type="text" name="honeypot" style="display:none">
+        <input type="hidden" name="accessKey" value="aaaaaaaa-bbbb-cccc-dddd-eeee6666kkkk">
+        <input type="hidden" name="subject" value="Contact us from - example.com" />
+        <input type="hidden" name="replyTo" value="@">
+        <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+        <input type="submit" value="Submit" />
+    </form>
 </body>
 </html>
